@@ -14,7 +14,7 @@ function BookingCard({viewMyBookings, getMyBookings}) {
             }
             const result=await deleteBookingApi(reqHeader,id)
             console.log(result);
-            if(result.status==200){
+            if(result.status===200){
                 alert("Cancel your booking")
                 getMyBookings()
             }
