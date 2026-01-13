@@ -72,7 +72,7 @@ function AdminAddCar() {
                 const result = await addCarApi(reqBody,headerConfig)
                 console.log(result);
 
-                if (result.status == (201)) {
+                if (result.status === (201)) {
                     alert(`${result.data.title} added successfully`)
                     getCars()
                     handleClose()

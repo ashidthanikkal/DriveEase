@@ -20,7 +20,7 @@ function AdminCarCard({cars}) {
             }
             const result=await deleteCarApi(reqHeader,id)
             // console.log(result);
-            if(result.status==200){
+            if(result.status===200){
                 getCars()
             }
         }

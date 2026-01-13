@@ -66,7 +66,6 @@ function PayPal() {
     }
 
 
-console.log(bookingDetails.totalAmount);
     useEffect(()=>{
 
         try{

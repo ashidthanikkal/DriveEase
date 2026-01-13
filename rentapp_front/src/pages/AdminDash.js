@@ -56,7 +56,7 @@ function AdminDash() {
             }
             const result=await deleteBookingApi(reqHeader,id)
             console.log(result);
-            if(result.status==200){
+            if(result.status===200){
             getBookings()
             }
         }
